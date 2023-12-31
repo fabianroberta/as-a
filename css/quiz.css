@@ -1,0 +1,83 @@
+body {
+  background-color: aliceblue;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#back {
+  font-size: 2em;
+  position: relative;
+  left: -35%;
+}
+
+.container {
+  background-color: aliceblue;
+  border: 1px solid #9eb8d9;
+  box-shadow: 3px 3px 3px #9eb8d9;
+  width: 80%;
+  max-width: 700px;
+  margin-top: 5em;
+  border-radius: 15px;
+  padding: 3%;
+}
+
+.option {
+  display: block;
+  margin-bottom: 9px;
+  border: 1px solid #9eb8d9;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.option:has(input[type='radio']:checked) {
+  background-color: #b2c8e4;
+  outline: 2px solid grey;
+}
+
+.option:has(input[type='radio']:checked.correct) {
+  background-color: lightgreen;
+}
+
+.option:has(input[type='radio']:checked.wrong) {
+  background-color: lightcoral;
+}
+
+.option:has(input[type='radio'].correct) {
+  background-color: lightgreen;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+
+.wrong {
+  background-color: lightcoral;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #428bca;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:active {
+  background-color: #4d789e;
+}
+
+.hide {
+  display: none;
+}
