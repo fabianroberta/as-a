@@ -32,21 +32,25 @@ body {
   padding: 3px;
 }
 
-.option:has(input[type='radio']:checked) {
+.option:has(input:checked) {
   background-color: #b2c8e4;
   outline: 2px solid grey;
 }
 
-.option:has(input[type='radio']:checked.correct) {
+.option:has(input:checked.correct) {
   background-color: lightgreen;
 }
 
-.option:has(input[type='radio']:checked.wrong) {
+.option:has(input:checked.wrong) {
   background-color: lightcoral;
 }
 
-.option:has(input[type='radio'].correct) {
+.option:has(input.correct) {
   background-color: lightgreen;
+}
+
+.option:has(input.wrong) {
+  background-color: lightcoral;
 }
 
 .correct {

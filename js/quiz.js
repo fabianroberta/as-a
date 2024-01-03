@@ -51,16 +51,29 @@ function displayQuestion() {
     const option = document.createElement('label');
     option.className = 'option';
 
-    const radio = document.createElement('input');
-    radio.type = 'radio';
-    radio.name = 'quiz';
-    radio.value = shuffledOptions[i];
+    if (questionData.type === 'radio') {
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'quiz';
+      radio.value = shuffledOptions[i];
 
-    const optionText = document.createTextNode(shuffledOptions[i]);
+      const optionText = document.createTextNode(shuffledOptions[i]);
 
-    option.appendChild(radio);
-    option.appendChild(optionText);
-    optionsElement.appendChild(option);
+      option.appendChild(radio);
+      option.appendChild(optionText);
+      optionsElement.appendChild(option);
+    } else {
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = 'op' + i;
+      checkbox.value = shuffledOptions[i][0];
+
+      const optionText = document.createTextNode(shuffledOptions[i][0]);
+
+      option.appendChild(checkbox);
+      option.appendChild(optionText);
+      optionsElement.appendChild(option);
+    }
   }
 
   quizContainer.innerHTML = '';
@@ -73,29 +86,63 @@ displayQuestion();
 function checkAnswer() {
   submitButton.style.display = 'none';
 
-  const selectedOption = document.querySelector('input[name="quiz"]:checked');
-  if (selectedOption) {
-    const answer = selectedOption.value;
-    if (answer === allQuestions[currentQuestion].answer) {
-      score++;
-      selectedOption.classList.add('correct');
-    } else {
-      selectedOption.classList.add('wrong');
-      const options = document.querySelectorAll('input[name="quiz"]');
-      for (let i = 0; i < options.length; i++) {
-        if (options[i].value === allQuestions[currentQuestion].answer) {
-          options[i].classList.add('correct');
-          break;
+  if (allQuestions[currentQuestion].type === 'radio') {
+    const selectedOption = document.querySelector('input[name="quiz"]:checked');
+    if (selectedOption) {
+      const answer = selectedOption.value;
+      if (answer === allQuestions[currentQuestion].answer) {
+        score++;
+        selectedOption.classList.add('correct');
+      } else {
+        selectedOption.classList.add('wrong');
+        const options = document.querySelectorAll('input[name="quiz"]');
+        for (let i = 0; i < options.length; i++) {
+          if (options[i].value === allQuestions[currentQuestion].answer) {
+            options[i].classList.add('correct');
+            break;
+          }
         }
       }
     }
-
-    currentQuestion++;
-    if (!(currentQuestion < 9 && currentQuestion < allQuestions.length)) {
-      nextButton.innerHTML = 'View result';
+  } else {
+    const isRight = checkCheckboxAnswer();
+    if (isRight) {
+      score++;
     }
-    nextButton.style.display = 'inline-block';
   }
+
+  currentQuestion++;
+  if (!(currentQuestion < 9 && currentQuestion < allQuestions.length)) {
+    nextButton.innerHTML = 'View result';
+  }
+  nextButton.style.display = 'inline-block';
+}
+
+function checkCheckboxAnswer() {
+  const options = allQuestions[currentQuestion].options;
+  let isCorrect = true;
+  for (let i = 0; i < options.length; i++) {
+    let crtOption = document.getElementById('op' + i);
+    for (let j = 0; j < options.length; j++) {
+      if (crtOption.value === options[j][0]) {
+        if (crtOption.checked) {
+          if (options[j][1]) {
+            crtOption.classList.add('correct');
+          } else {
+            crtOption.classList.add('wrong');
+            isCorrect = false;
+          }
+        } else {
+          if (options[j][1]) {
+            crtOption.classList.add('correct');
+            isCorrect = false;
+          }
+        }
+        break;
+      }
+    }
+  }
+  return isCorrect;
 }
 
 function showNext() {
