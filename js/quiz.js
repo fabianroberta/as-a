@@ -9,6 +9,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const topic = urlParams.get('topic');
 console.log(topic);
 
+const quote = window.quotes[Math.floor(Math.random() * window.quotes.length)];
+console.log(quote);
+
 let allQuestions = [];
 
 if (topic === 'random') {
@@ -30,6 +33,7 @@ const resultContainer = document.getElementById('result');
 const submitButton = document.getElementById('submit');
 const nextButton = document.getElementById('next');
 const retryButton = document.getElementById('retry');
+const quoteDiv = document.getElementById('quote');
 
 function displayQuestion() {
   submitButton.style.display = 'inline-block';
@@ -160,6 +164,8 @@ function displayResult() {
   nextButton.style.display = 'none';
   retryButton.style.display = 'inline-block';
   resultContainer.innerHTML = `You scored ${score} out of 9!`;
+
+  quoteDiv.innerHTML = quote;
 }
 
 function retryQuiz() {

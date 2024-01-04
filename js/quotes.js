@@ -1,0 +1,15 @@
+window.quotes = [
+  'Sometimes discouragement sets in. Happens to all of us. We try hard, stay true to our dreams and pursue our ideals. EVERY STEP COUNTS.',
+  "Be so good they can't ignore you. Life favors the devoted. It's just not possible for you to be great at what you do, always reaching for your brilliance and standing for excellence, and not win in the end.",
+  'Every step counts. Be like the stonecutter, steadily chipping away, day after day. Eventually, a single blow will crack the stone and reveal the diamond.',
+  'The best truly do sweat the minor details. They get the seemingly insignificant things right.',
+  'This is impossible, she said.\nOnly if you believe it is, the mad hatter answered.',
+  'All you need is faith, trust, and a little bit of pixie dust.',
+  'Every day is a new beginnig. Take a deep breath, smile and start again.',
+  "Do the universe a favor, don't hide your magic.",
+  'You can.',
+  'The best way out is always through.',
+  'The difference between ordinary and extraordinary is that little extra.',
+  "Don't be afraid to start over. It's a chance to build something better this time.",
+  'You can view it as a hard thing, or you can think of it as the next thing you are going to figure out.',
+];
