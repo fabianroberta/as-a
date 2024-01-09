@@ -1,5 +1,5 @@
 window.quotes = [
-  'Sometimes discouragement sets in. Happens to all of us. We try hard, stay true to our dreams and pursue our ideals. EVERY STEP COUNTS.',
+  'Sometimes discouragement sets in. Happens to all of us. We try hard, stay true to our dreams and pursue our ideals. Every step counts.',
   "Be so good they can't ignore you. Life favors the devoted. It's just not possible for you to be great at what you do, always reaching for your brilliance and standing for excellence, and not win in the end.",
   'Every step counts. Be like the stonecutter, steadily chipping away, day after day. Eventually, a single blow will crack the stone and reveal the diamond.',
   'The best truly do sweat the minor details. They get the seemingly insignificant things right.',

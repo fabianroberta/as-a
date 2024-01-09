@@ -165,6 +165,7 @@ function displayResult() {
   retryButton.style.display = 'inline-block';
   resultContainer.innerHTML = `You scored ${score} out of 9!`;
 
+  quoteDiv.style.display = 'inner-block';
   quoteDiv.innerHTML = quote;
 }
 
@@ -174,6 +175,7 @@ function retryQuiz() {
   quizContainer.style.display = 'block';
   submitButton.style.display = 'inline-block';
   retryButton.style.display = 'none';
+  quoteDiv.style.display = 'none';
   resultContainer.innerHTML = '';
   nextButton.innerHTML = 'Next';
   shuffleArray(allQuestions);
