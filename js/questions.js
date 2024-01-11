@@ -1,12 +1,6 @@
 window.questions = {
   hardware: [
     {
-      question: 'The cache memory is external to the processor.',
-      options: ['True', 'False'],
-      answer: 'True',
-      type: 'radio',
-    },
-    {
       question: 'Which statement is true about the primary memory?',
       options: [
         'Can be accessed directly from the CPU.',
@@ -175,6 +169,126 @@ window.questions = {
         ['in SSDs data is accessed faster', true],
       ],
       type: 'checkbox',
+    },
+  ],
+  processor: [
+    {
+      question:
+        'Which component of the processor ensures synchronisation of data flow and program instructions throught the computer?',
+      options: ['CU (Control Unit)', 'System clock', 'Data bus'],
+      answer: 'CU (Control Unit)',
+      type: 'radio',
+    },
+    {
+      question: 'The timing signals are produced by the system clock on the:',
+      options: ['Control bus', 'Data bus', 'Address bus', 'Signal bus'],
+      answer: 'Control bus',
+      type: 'radio',
+    },
+    {
+      question:
+        'The CPU takes data and programs held in backing store and puts them into IAS (Immediate Access Store) temporarily',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'The IAS is another name for primary (RAM) memory.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'Which one is a good example of a general purpose register?',
+      options: ['Accumulator', 'Index register', 'Program counter'],
+      answer: 'Accumulator',
+      type: 'radio',
+    },
+    {
+      question: 'Special purpose registers hold the program state.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question:
+        'A status register contains bits that can be set or cleared depending on the operation. Each bit is known as a flag. What does the flag named N represent?',
+      options: ['Negative flag', 'Carry flag', 'Overflow flag', 'Zero flag'],
+      answer: 'Negative flag',
+      type: 'radio',
+    },
+    {
+      question: 'What is an example of the use of the overflow flag?',
+      options: [
+        'it is set to 1 if an arithmetic operation results in an overflow',
+        'it is set to 0 if an arithmetic operation results in an overflow',
+        'it is set to 1 if an arithmetic operation has a carry',
+      ],
+      answer:
+        'it is set to 1 if an arithmetic operation results in an overflow',
+      type: 'radio',
+    },
+    {
+      question:
+        'Select the common busses used in the Von Neumann architecture:',
+      options: [
+        ['Address bus', true],
+        ['Data bus', true],
+        ['Control bus', true],
+        ['Input bus', false],
+        ['Write bus', false],
+        ['Transmission bus', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'The address bus is:',
+      options: ['Bidiresctional', 'Unidirectional'],
+      answer: 'Unidirectional',
+      type: 'radio',
+    },
+    {
+      question:
+        'True or false: The wider the bus, the more memory locations can be directly addressed at any given time.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'Select the bidirectional busses:',
+      options: [
+        ['Address bus', false],
+        ['Data bus', true],
+        ['Control bus', true],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'Identify types of signals that the control bus can transfer:',
+      options: [
+        ['Interrupt', true],
+        ['Timing', true],
+        ['Read', true],
+        ['Write', true],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'Unsynchronised operations and overheating can be caused by:',
+      options: ['overclocking', 'underclocking', 'bus width too wide'],
+      answer: 'overclocking',
+      type: 'radio',
+    },
+    {
+      question:
+        'When a processor reads memory, it first checks out ........... and then moves on to .................... if the required data is not there.',
+      options: [
+        'cache, main memory',
+        'main memory, cache',
+        'main memory, secondary storage',
+      ],
+      answer: 'cache, main memory',
+      type: 'radio',
     },
   ],
   data: [
