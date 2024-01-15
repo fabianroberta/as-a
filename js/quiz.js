@@ -3,6 +3,7 @@ function shuffleArray(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
+  console.log('Shuffle', array.length);
 }
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -165,7 +166,7 @@ function displayResult() {
   retryButton.style.display = 'inline-block';
   resultContainer.innerHTML = `You scored ${score} out of 9!`;
 
-  quoteDiv.style.display = 'inner-block';
+  quoteDiv.style.display = 'inline-block';
   quoteDiv.innerHTML = quote;
 }
 
