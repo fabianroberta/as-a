@@ -291,21 +291,252 @@ window.questions = {
       type: 'radio',
     },
   ],
-  data: [
+  management: [
     {
-      question: 'What is the tallest mountain in the world?',
-      options: ['Mount Everest', 'K2', 'Kangchenjunga', 'Makalu'],
-      answer: 'Mount Everest',
-      type: 'radio',
-    },
-    {
-      question: 'What is the capital of France?',
+      question: 'Select the characteristics of a preemptive system:',
       options: [
-        ['op1', true],
-        ['op2', true],
-        ['op3', false],
+        [
+          'once the resources are allocated to a process, it retains them until it has completed its burst time or it has switched to a waiting state',
+          false,
+        ],
+        ['the process can be interrupted while it is running', true],
+        ['the process cannot be interrupted while it is running', false],
+        [
+          'there is a risk that low priority processes may be starved of resources',
+          true,
+        ],
       ],
       type: 'checkbox',
     },
+    {
+      question: 'Select the characteristics of a non-preemptive system:',
+      options: [
+        [
+          'once the resources are allocated to a process, it retains them until it has completed its burst time or it has switched to a waiting state',
+          true,
+        ],
+        ['the process can be interrupted while it is running', false],
+        ['the process cannot be interrupted while it is running', true],
+        [
+          'there is a risk that processes with shorter burst time are starved of resources, if a process with long burst time is running',
+          true,
+        ],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'The role of scheduling is:',
+      options: [
+        ['To maximize the system throughput', true],
+        ['To ensure response time is acceptable', true],
+        ['To ensure the systems remains stable at all times', true],
+        ['To manage the memory needed for the current task', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'Process priority depends on:',
+      options: [
+        'its category',
+        'which resources does the process require and how many',
+        'how much CPU time is needed',
+        'All answers are true',
+      ],
+      answer: 'All answers are true',
+      type: 'radio',
+    },
+    {
+      question:
+        'The Process Control Block (PCB) is a data structure which contains:',
+      options: [
+        'All answers are true',
+        'Current process state (ready, running, blocked)',
+        'Process privileges',
+        'Register values (PC, MAR, MDR and ACC)',
+        'Process priority',
+        'Process ID',
+        'CPU time needed',
+      ],
+      answer: 'All answers are true',
+      type: 'radio',
+    },
+    {
+      question: 'In which state is a process that is waiting for CPU time?',
+      options: ['Running', 'Ready', 'Blocked'],
+      answer: 'Ready',
+      type: 'radio',
+    },
+    {
+      question:
+        'In which state is a process that is waiting for an event or I/O?',
+      options: ['Running', 'Ready', 'Blocked'],
+      answer: 'Blocked',
+      type: 'radio',
+    },
+    {
+      question:
+        'Select the best scheduling routines for minimising the process waiting times:',
+      options: [
+        ['First Come First Served', false],
+        ['Shortest Job First', true],
+        ['Shortest Remaining Time First', true],
+        ['Round Robin', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'Which scheduling routine has a fixed time slice for each process (or each process has the same priority)?',
+      options: [
+        'First Come First Served',
+        'Shortest Job First',
+        'Shortest Remaining Time First',
+        'Round Robin',
+      ],
+      answer: 'Round Robin',
+      type: 'radio',
+    },
+    {
+      question: 'Shortest Job First is an example of:',
+      options: ['preemptive scheduling', 'non-preemptive scheduling'],
+      answer: 'non-preemptive scheduling',
+      type: 'radio',
+    },
+    {
+      question: 'Shortest Remaining Time First is an example of:',
+      options: ['preemptive scheduling', 'non-preemptive scheduling'],
+      answer: 'preemptive scheduling',
+      type: 'radio',
+    },
+    {
+      question:
+        'Context switching is used to save the state of the preempted processes.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'Memory management: Memory is split into fixed-sized blocks:',
+      options: ['Paging', 'Segmentation'],
+      answer: 'Paging',
+      type: 'radio',
+    },
+    {
+      question: 'Internal fragmentation can be a consequence of:',
+      options: ['Paging', 'Segmentation'],
+      answer: 'Paging',
+      type: 'radio',
+    },
+    {
+      question:
+        'Memory management: Memory is split into variable-sized blocks:',
+      options: ['Paging', 'Segmentation'],
+      answer: 'Segmentation',
+      type: 'radio',
+    },
+    {
+      question: 'Select the benefits of virtual memory:',
+      options: [
+        ['programs larger than physical memory can still be executed', true],
+        ['no need to waste memory with data that is not being used', true],
+        ['no need to buy and install more RAM', true],
+        ['more pages are swapped', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        "Which of the following page replacement algorithms suffer from Belady's anomaly?",
+      options: [
+        'FIFO page replacement',
+        'clock page replacement',
+        'least recently used page replacement',
+        'optimal page replacement',
+      ],
+      answer: 'FIFO page replacement',
+      type: 'radio',
+    },
+    {
+      question: 'Complete the sentence: A page fault occurs when ...',
+      options: [
+        'an exception occurs',
+        'a requested page is not yet in memory',
+        'a requested page is already in memory',
+        'the computer runs out of RAM',
+        'a page has become corrupted',
+      ],
+      answer: 'a requested page is not yet in memory',
+      type: 'radio',
+    },
+    {
+      question:
+        'Which of the following pages will the Optimal Page Replacement algorithm select?',
+      options: [
+        'the page that has been used the most number of times',
+        'the page that will not be used for the longest time in the future',
+        'the page that has been used the least number of times',
+      ],
+      answer:
+        'the page that will not be used for the longest time in the future',
+      type: 'radio',
+    },
+    {
+      question:
+        'A virtual memory system is using a FIFO page replacement algorithm. Increasing the number of page frames in main memory, will:',
+      options: [
+        'always decrease the number of page faults',
+        'always increase the number of page faults',
+        'never affect the number of page faults',
+      ],
+      answer: 'always increase the number of page faults',
+      type: 'radio',
+    },
+    {
+      question: 'What is the swap space on a hard disk used for?',
+      options: [
+        'storing device drivers',
+        'saving interrupts',
+        'saving process data',
+      ],
+      answer: 'saving process data',
+      type: 'radio',
+    },
+    {
+      question: 'Which of the following would cause disk thrashing?',
+      options: [
+        'when a number of interrupts occur',
+        'frequent accessing of pages not in main memory',
+        'when the processes are in a blocked state',
+      ],
+      answer: 'frequent accessing of pages not in main memory',
+      type: 'radio',
+    },
+    {
+      question: 'Which of the following is the main entry in a page table?',
+      options: [
+        'the virtual page number',
+        'the page frame number',
+        'the size of the page',
+      ],
+      answer: 'the page frame number',
+      type: 'radio',
+    },
   ],
+  // data: [
+  //   {
+  //     question: 'What is the tallest mountain in the world?',
+  //     options: ['Mount Everest', 'K2', 'Kangchenjunga', 'Makalu'],
+  //     answer: 'Mount Everest',
+  //     type: 'radio',
+  //   },
+  //   {
+  //     question: 'What is the capital of France?',
+  //     options: [
+  //       ['op1', true],
+  //       ['op2', true],
+  //       ['op3', false],
+  //     ],
+  //     type: 'checkbox',
+  //   },
+  // ],
 };
