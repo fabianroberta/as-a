@@ -138,7 +138,7 @@ window.questions = {
     },
     {
       question:
-        'Because of the cost implications, he majority of solid state drives use:',
+        'Because of the cost implications, the majority of solid state drives use:',
       options: ['NAND technology', 'NOR technology'],
       answer: 'NAND technology',
       type: 'radio',
@@ -520,6 +520,171 @@ window.questions = {
       ],
       answer: 'the page frame number',
       type: 'radio',
+    },
+  ],
+  multimedia: [
+    {
+      question: 'The smallest picture element that makes up an image is:',
+      options: ['Pixel', 'Bit', 'Byte'],
+      answer: 'Pixel',
+      type: 'radio',
+    },
+    {
+      question: 'Number of bits used to represent the colors in a pixel:',
+      options: ['Color depth', 'Image resolution', 'Pixel density'],
+      answer: 'Color depth',
+      type: 'radio',
+    },
+    {
+      question: 'How many colors can be represented with 8 bit color depth?',
+      options: ['256', '8', '255'],
+      answer: '256',
+      type: 'radio',
+    },
+    {
+      question:
+        'Bit depth - number of bits used to represent the smallest unit in a sound or image file.',
+      options: [
+        'The larger the bit depth, the better the quality of the sound or image.',
+        'The larger the bit depth, the lower the quality of the sound or image.',
+      ],
+      answer:
+        'The larger the bit depth, the better the quality of the sound or image.',
+      type: 'radio',
+    },
+    {
+      question: 'An increase in the size of a file has impact on:',
+      options: [
+        ['time for download', true],
+        ['time for transferring from one device to another', true],
+        ['screen resolution', false],
+        ['nothing', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'If resolution is 1920 x 1080 pixels and bit depth is 24, how many megabytes does the file have?',
+      options: ['6.222 MB', '50 000 MB', '5.933 MB'],
+      answer: '6.222 MB',
+      type: 'radio',
+    },
+    {
+      question: 'Check the elements that appear in the header of a file:',
+      options: [
+        ['file type', true],
+        ['file size', true],
+        ['image resolution', true],
+        ['compression information', true],
+        ['username', false],
+        ['category', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        '_______ are images that use ______ to describe lines and curves which form _______',
+      options: [
+        'Vector graphics, 2D points, geometric shapes',
+        'Bitmap, pixels, shapes',
+        'Vector graphics',
+        '3D points',
+        'pixels',
+      ],
+      answer: 'Vector graphics, 2D points, geometric shapes',
+      type: 'radio',
+    },
+    {
+      question:
+        'The file header of a vector graphic contains a drawing list made of:',
+      options: [
+        ['commands used for every object', true],
+        ['attributes that make up each object', true],
+        ['relative position of each object', true],
+        ['dimensions of each object', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'Select file formats for vector graphics:',
+      options: [
+        ['.svg', true],
+        ['.cgm', true],
+        ['.odg', true],
+        ['.png', false],
+        ['.bmp', false],
+        ['.jpeg', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'Select the best type of image for the scenario: Image needs to be resized. ',
+      options: ['Vector graphics', 'Bitmap'],
+      answer: 'Vector graphics',
+      type: 'radio',
+    },
+    {
+      question:
+        'Select the best type of image for the scenario: Design a logo for a company. ',
+      options: ['Vector graphics', 'Bitmap'],
+      answer: 'Vector graphics',
+      type: 'radio',
+    },
+    {
+      question:
+        'Select the best type of image for the scenario: Image looks more realistic. ',
+      options: ['Vector graphics', 'Bitmap'],
+      answer: 'Bitmap',
+      type: 'radio',
+    },
+    {
+      question: 'Vector graphics do not require large file size.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'Number of bits used to represent sound amplitude: ',
+      options: ['Sampling resolution', 'Sampling rate', 'Frame rate'],
+      answer: 'Sampling resolution',
+      type: 'radio',
+    },
+    {
+      question:
+        'File compression method where parts of the original file cannot be recovered during decompression:',
+      options: ['Lossless', 'Lossy'],
+      answer: 'Lossy',
+      type: 'radio',
+    },
+    {
+      question: 'RLE (Run Length Encoding) is a: ',
+      options: [
+        'lossless file compression technique',
+        'lossy file compression technique',
+      ],
+      answer: 'lossless file compression technique',
+      type: 'radio',
+    },
+    {
+      question:
+        'MP3 is a lossy compression technology that reduces the size of a file by about 90%.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'Select statements that describe perceptual music shaping:',
+      options: [
+        ['remove frequencies that are outside the human hearing range', true],
+        [
+          'if two sounds are played at the same time, only the louder one is kept',
+          true,
+        ],
+        ['remove the sounds that are bad', false],
+        ['remove duplicated sounds', false],
+      ],
+      type: 'checkbox',
     },
   ],
   // data: [
