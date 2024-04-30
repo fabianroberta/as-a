@@ -687,6 +687,122 @@ window.questions = {
       type: 'checkbox',
     },
   ],
+  databases: [
+    {
+      question: 'A field is: ',
+      options: [
+        'A column in a table',
+        'A row in a table',
+        'Anything that can have data stored about it.',
+      ],
+      answer: 'A column in a table',
+      type: 'radio',
+    },
+    {
+      question: 'An entity is: ',
+      options: [
+        'Anything that can have data stored about it.',
+        'A tuple.',
+        'A field.',
+        'A record.',
+      ],
+      answer: 'Anything that can have data stored about it.',
+      type: 'radio',
+    },
+    {
+      question: 'A record is: ',
+      options: [
+        'A row in a table',
+        'A column in a table',
+        'A table in the database',
+      ],
+      answer: 'A row in a table',
+      type: 'radio',
+    },
+    {
+      question: 'A row in a table can also be called a tuple.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question:
+        'A set of attributes in one table that refer to the primary key in another table:',
+      options: ['Foreign key', 'Primary key', 'Secondary key'],
+      answer: 'Foreign key',
+      type: 'radio',
+    },
+    {
+      question:
+        'Property of a database that does not contain any values of a foreign key that are not matched to the corresponding primary key:',
+      options: ['Referential integrity', 'Relationship', 'Composite key'],
+      answer: 'Referential integrity',
+      type: 'radio',
+    },
+    {
+      question: 'Entities do not contain repeated groups of attributes:',
+      options: ['1NF', '2NF', '3NF'],
+      answer: '1NF',
+      type: 'radio',
+    },
+    {
+      question: 'A file-based approach is limited because: ',
+      options: [
+        [
+          'storage space is wasted when data items are duplicated to be used in separate applications and some data is redundant',
+          true,
+        ],
+        [
+          'data can become inconsistent if altered by multiple applications',
+          true,
+        ],
+        ['data is independent', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'A database approach is beneficial because:',
+      options: [
+        [
+          'storage space is not wasted as data items are only stored once, meaning little or no redundant data',
+          true,
+        ],
+        [
+          'data is consistent - data altered in one application is available in another application',
+          true,
+        ],
+        ['the data is dependent on the software used', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'A database is in 2NF is when: ',
+      options: [
+        'It is in 1NF and any non-key attributes fully depend on the primary key',
+        'There are partial dependencies on the primary key',
+        'It is in 1NF and there are non non-key dependences.',
+      ],
+      answer:
+        'It is in 1NF and any non-key attributes fully depend on the primary key',
+      type: 'radio',
+    },
+    {
+      question: 'A database is in 3NF if:',
+      options: [
+        ['No multivalued attributes', true],
+        ['No partial dependences', true],
+        ['No non-key dependency', true],
+        ['No referential integrity', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'A unique identifier for a record in a table is a:',
+      options: ['Primary key', 'Secondary key', 'Composite key', 'Unique key'],
+      answer: 'Primary key',
+      type: 'radio',
+    },
+  ],
   // data: [
   //   {
   //     question: 'What is the tallest mountain in the world?',
