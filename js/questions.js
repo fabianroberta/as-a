@@ -803,6 +803,232 @@ window.questions = {
       type: 'radio',
     },
   ],
+  networks: [
+    {
+      question:
+        'Hardware used to connect together a number of devices. It directs incoming data packets to a specific destination address only.',
+      options: ['Switch', 'Hub', 'Router', 'Modem'],
+      answer: 'Switch',
+      type: 'radio',
+    },
+    {
+      question:
+        'Network in which each node can share its files with all the others.',
+      options: ['Peer-to-peer', 'Client-Server'],
+      answer: 'Peer-to-peer',
+      type: 'radio',
+    },
+    {
+      question: 'Device used to boost a signal on a network:',
+      options: ['Repeater', 'Gateway', 'Bridge'],
+      answer: 'Repeater',
+      type: 'radio',
+    },
+    {
+      question:
+        'A company would choose a client-server network model for the following reasons:',
+      options: [
+        ['Access to network resources needs to be properly controlled.', true],
+        ['There is a need for good network security.', true],
+        [
+          'Data needs to be backed up at a central location (to avoid accidental loss).',
+          true,
+        ],
+        ['Connectivity between users is the most important aspect.', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'In which network model devices can act both as client and server?',
+      options: ['Client-Server', 'Peer-to-peer'],
+      answer: 'Peer-to-peer',
+      type: 'radio',
+    },
+    {
+      question: 'The peer-to-peer model does not have a central server.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question: 'Since there is no central storage, a peer-to-peer model:',
+      options: [
+        ['does not require user authentication', true],
+        ['has little data security', true],
+        ['requires user authentication', false],
+        ['has robust security for each node', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'A web browser has very limited functions unless it is connected to a server. This makes the web browser a:',
+      options: ['Thin client', 'Thick client'],
+      answer: 'Thin client',
+      type: 'radio',
+    },
+    {
+      question:
+        'The client-server model offers thick and thin clients. Select the true statements:',
+      options: [
+        ['A thin client is heavily dependent on the server.', true],
+        [
+          'A thick client can run some of the features even when not connected to a server.',
+          true,
+        ],
+        ['A thin client relies heavily on local resources.', false],
+        [
+          'A thick client relies on a good, stable network connection for it to work.',
+          false,
+        ],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        "A computer game which can run independently on a user's computer, but can also connect to an online server to allow gamers to play and communicate with each other is a:",
+      options: ['Thick client', 'Thin client'],
+      answer: 'Thick client',
+      type: 'radio',
+    },
+    {
+      question: 'Industrial monitoring and control systems use:',
+      options: ['Mesh topology', 'Bus topology', 'Star topology'],
+      answer: 'Mesh topology',
+      type: 'radio',
+    },
+    {
+      question: 'Wireless connectivity uses electromagnetic radiation.',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+    {
+      question:
+        'Which cable has the lowest data transfer rate, is the cheapest option and is most commonly used in LANs?',
+      options: ['Twisted pair cable', 'Coaxial cable', 'Fibre optic cable'],
+      answer: 'Twisted pair cable',
+      type: 'radio',
+    },
+    {
+      question:
+        'Device that connects one LAN to another LAN that uses the same protocol:',
+      options: ['Bridge', 'Gateway', 'Router'],
+      answer: 'Bridge',
+      type: 'radio',
+    },
+    {
+      question: 'Select the roles of a router:',
+      options: [
+        ['Broadcasts messages to a LAN', false],
+        ['Acts as a default gateway', true],
+        ['Performs protocol translation', true],
+        ['Can calculate the best route to a destination address', true],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'Device that can be used to connect more LANs that use different protocols:',
+      options: ['Gateway', 'Bridge', 'Modem'],
+      answer: 'Gateway',
+      type: 'radio',
+    },
+    {
+      question:
+        'A ......... connects to the public infrastructure (cable, telephone, fibre-optics or satellite) and supplies the user with a standard ......... output which allows connection to a ........., thus enabling the internet connection to occur.',
+      options: [
+        'modem, Ethernet, router',
+        'router, Ethernet, modem',
+        'Ethernet, modemm, router',
+      ],
+      answer: 'modem, Ethernet, router',
+      type: 'radio',
+    },
+    {
+      question: 'How many bits is one IPv4 address?',
+      options: ['32 bits', '16 bits', '8 bits'],
+      answer: '32 bits',
+      type: 'radio',
+    },
+    {
+      question: 'What network class is for small networks?',
+      options: ['A', 'B', 'C'],
+      answer: 'C',
+      type: 'radio',
+    },
+    {
+      question: 'How many bits are used for networkID in class A?',
+      options: ['8', '16', '24'],
+      answer: '8',
+      type: 'radio',
+    },
+    {
+      question:
+        'Consider the class B network IP address 128.148.12.14 . What is the hostID ?',
+      options: ['12.14', '128.148', '128.148.12'],
+      answer: '12.14',
+      type: 'radio',
+    },
+    {
+      question:
+        'Consider the class A network IP address 29.68.0.43 . What is the networkID ?',
+      options: ['29', '68.0.43', '43'],
+      answer: '29',
+      type: 'radio',
+    },
+    {
+      question:
+        'Consider the class C network IP address 192.15.25.240 . What is the networkID ?',
+      options: ['192.15.25', '240', '15.25.240'],
+      answer: '192.15.25',
+      type: 'radio',
+    },
+    {
+      question: 'Which class is used for very large networks?',
+      options: ['A', 'B', 'C'],
+      answer: 'A',
+      type: 'radio',
+    },
+    {
+      question:
+        'How many hexadecimal digits are in a group in an IPv6 address?',
+      options: ['16', '4', '8', '2'],
+      answer: '4',
+      type: 'radio',
+    },
+    {
+      question: 'How many bits are used for an IPv6 address?',
+      options: ['128', '64', '16'],
+      answer: '128',
+      type: 'radio',
+    },
+    {
+      question: 'Select the benefits of IPv6 over IPv4:',
+      options: [
+        ['allows for more efficient routing', true],
+        ['has built in authentication', true],
+        ['removes risk of private IP adress collisions', true],
+        ['uses Network Address Translation', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'In the URL http://www.cambridge.com/computerscience the domain type is:',
+      options: ['www', '.com', 'cambridge'],
+      answer: '.com',
+      type: 'radio',
+    },
+    {
+      question:
+        'DNS servers contain a database of URLs with the matching IP addresses',
+      options: ['True', 'False'],
+      answer: 'True',
+      type: 'radio',
+    },
+  ],
   // data: [
   //   {
   //     question: 'What is the tallest mountain in the world?',
