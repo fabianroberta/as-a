@@ -1029,6 +1029,97 @@ window.questions = {
       type: 'radio',
     },
   ],
+  security: [
+    {
+      question:
+        'Methods taken to prevent unauthorised access to data and to recover data if lost or corrupted:',
+      options: ['Data security', 'Data privacy', 'Data integrity'],
+      answer: 'Data security',
+      type: 'radio',
+    },
+    {
+      question:
+        'Software or hardware that sits between a computer and an external network that monitors and filters all incoming and outgoing activities:',
+      options: ['Firewall', 'Proxy server', 'DNS'],
+      answer: 'Firewall',
+      type: 'radio',
+    },
+    {
+      question:
+        'Legitimate-looking emails designed to trick a recipient into giving their personal data to the sender of the email:',
+      options: ['Phishing', 'Pharming', 'Hacking'],
+      answer: 'Phishing',
+      type: 'radio',
+    },
+    {
+      question:
+        'Redirecting a user to a fake website in order to illegaly obtain personal data about the user:',
+      options: ['Pharming', 'Phishing', 'Hacking'],
+      answer: 'Pharming',
+      type: 'radio',
+    },
+    {
+      question: 'Select the functions of an antivirus software:',
+      options: [
+        ['Quarantine files which are possibly infected', true],
+        ['Check software for behavior that could indicate a virus', true],
+        [
+          'Check software or files after they are run or loaded on a computer',
+          false,
+        ],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question: 'Select what is meant by data integrity: Data should be ... ',
+      options: [
+        ['Accurate', true],
+        ['Complete', true],
+        ['Consistent', true],
+        ['Backed up', false],
+      ],
+      type: 'checkbox',
+    },
+    {
+      question:
+        'Method used to ensure entered data is reasonable and meets certain input criteria:',
+      options: ['Validation', 'Verification'],
+      answer: 'Validation',
+      type: 'radio',
+    },
+    {
+      question:
+        'Method used to ensure data is correct by using double entry or visual checks:',
+      options: ['Validation', 'Verification'],
+      answer: 'Verification',
+      type: 'radio',
+    },
+    {
+      question:
+        'ARQ (Automatic Repeat Request) uses ............ (a message sent to the receiver indicating that data has been received correctly) and timeout.',
+      options: ['acknowledgment', 'protocol', 'encryption'],
+      answer: 'acknowledgment',
+      type: 'radio',
+    },
+    {
+      question: 'What is the parity bit for 1101100 if odd parity is used?',
+      options: ['1', '0'],
+      answer: '1',
+      type: 'radio',
+    },
+    {
+      question: 'What is the parity bit for 1101110 if odd parity is used?',
+      options: ['1', '0'],
+      answer: '0',
+      type: 'radio',
+    },
+    {
+      question: 'What is the parity bit for 1101100 if even parity is used?',
+      options: ['1', '0'],
+      answer: '0',
+      type: 'radio',
+    },
+  ],
   // data: [
   //   {
   //     question: 'What is the tallest mountain in the world?',
